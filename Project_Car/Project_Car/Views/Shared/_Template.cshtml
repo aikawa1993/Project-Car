@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+    <title>Jeren</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+        input[type=text] {
+            width: 300px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 12px;
+            background-color: white;
+            background-image: url('searchicon.png');
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 8px 40px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+        }
+
+    </style>
+</head>
+<body id="top">
+<div class="wrapper row0">
+    <div id="topbar" class="hoc clear">
+        <div class="fl_left">
+            <ul class="nospace">
+                <li><i class="fa fa-phone"></i> +00 (123) 456 7890</li>
+                <li><i class="fa fa-envelope-o"></i> info@domain.com</li>
+            </ul>
+        </div>
+        <div class="fl_right">
+            <form>
+                <input type="text" name="search" placeholder="Search..">
+            </form>
+        </div>
+    </div>
+</div>
+<div class="wrapper row1">
+    <header id="header" class="hoc clear">
+        <div id="logo" class="fl_left">
+            <h1><a href="index.html">Jeren</a>
+            </h1>
+        </div>
+        <nav id="mainav" class="fl_right">
+            <ul class="clear">
+                <li class="active"><a href="#">Trang Chủ</a></li>
+                <li><a href="#">Giới Thiệu</a></li>
+                <li><a href="#">Sản Phẩm</a></li>
+                <li><a href="#">Đăng Ký Lái Thử</a></li>
+                @*<li>
+                    <a class="drop" href="#">Dropdown</a>
+                    <ul>
+                        <li><a href="#">Level 2</a></li>
+                        <li>
+                            <a class="drop" href="#">Level 2 + Drop</a>
+                            <ul>
+                                <li><a href="#">Level 3</a></li>
+                                <li><a href="#">Level 3</a></li>
+                                <li><a href="#">Level 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Level 2</a></li>
+                    </ul>
+                </li>*@
+                <li>
+                    <a class="drop" href="#">Tin Tức</a>
+                    <ul>
+                        <li><a href="/pages/gallery.html">Phong Thủy</a></li>
+                        <li><a href="/pages/full-width.html">Thị Trường</a></li>
+                        <li><a href="/pages/sidebar-left.html">Khuyến Mãi</a></li>
+                        <li><a href="/pages/sidebar-right.html">Toyota Việt Nam</a></li>
+                        <li><a href="/pages/basic-grid.html">Tư Vấn Xe</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+</div>
+</body>
+@RenderBody()
+</html>
